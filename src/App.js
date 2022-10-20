@@ -67,7 +67,7 @@ const App = () => {
     {
       name: "I like to make things pretty",
       image: "https://twitter.com/stephmichs/status/1548146082017726464/photo/2",  
-      attributes: ["enthusiastic", "very much like dogs", "ennjoys sushi", "can sleep any time of day"],
+      attributes: ["enthusiastic", "very much like dogs", "enjoys sushi", "can sleep any time of day"],
     },
   ]
 
