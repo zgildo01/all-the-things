@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 import ZeusThings from './pages/ZeusThings/ZeusThings'
 import StyledThings from './pages/StyledThings/StyledThings'
 import SillyThings from './pages/SillyThings/SIllyThings'
+import PositiveThings from './pages/PositiveThings/PositiveThings'
 import Landing from './pages/Landing/Landing'
 
 const App = () => {
@@ -66,6 +67,14 @@ const App = () => {
     },
   ]
 
+  const stephsThings = [
+    {
+      name: "I like to make things pretty",
+      image: "https://twitter.com/stephmichs/status/1548146082017726464/photo/2",  
+      attributes: ["enthusiastic", "very much like dogs", "enjoys sushi", "can sleep any time of day"],
+    },
+  ]
+
   return (
     <Routes>
       {/* All the <Route> components should live here */}
@@ -81,6 +90,10 @@ const App = () => {
       <Route
         path="/the-silly-things"
         element={<SillyThings things={huntersThings} />}
+      />
+      <Route
+        path="/the-positive-things"
+        element={<PositiveThings things={stephsThings} />}
       />
     </Routes>
   )
