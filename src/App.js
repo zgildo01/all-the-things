@@ -62,6 +62,14 @@ const App = () => {
     },
   ]
 
+  const stephsThings = [
+    {
+      name: "I like to make things pretty",
+      image: "https://twitter.com/stephmichs/status/1548146082017726464/photo/2",  
+      attributes: ["enthusiastic", "very much like dogs", "ennjoys sushi", "can sleep any time of day"],
+    },
+  ]
+
   return (
     <Routes>
       {/* All the <Route> components should live here */}
@@ -77,6 +85,10 @@ const App = () => {
       <Route
         path="/the-silly-things"
         element={<SillyThings things={huntersThings} />}
+      />
+      <Route
+        path="/the-positive-things"
+        element={<PositiveThings things={stephsThings} />}
       />
     </Routes>
   )
