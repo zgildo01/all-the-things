@@ -13,5 +13,5 @@ const SillyThings = (props) => {
     </>
   )
 }
- 
+
 export default SillyThings
