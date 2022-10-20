@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
+import DingusThings from './pages/DingusThings/DingusThings'
 import ManliestThings from './pages/ManliestThings/ManliestThings'
 import StyledThings from './pages/StyledThings/StyledThings'
 import SillyThings from './pages/SillyThings/SIllyThings'
@@ -61,6 +62,13 @@ const App = () => {
       attributes: ["efficient", "reusability", "not a taco", "beautiful"],
     },
   ]
+  const ryansThings = [
+    {
+      name: "Big Baller",
+      image: "https://pbs.twimg.com/media/FJagYZTXEAUI4VC.jpg",
+      attributes: ['correct', 'bad-dream-fucker', 'Elliott Smith and Sufjan Stevens enjoyer']
+    }
+  ]
 
   return (
     <Routes>
@@ -77,6 +85,10 @@ const App = () => {
       <Route
         path="/the-silly-things"
         element={<SillyThings things={huntersThings} />}
+      />
+      <Route
+        path="/the-dingus-things"
+        element={<DingusThings things={ryansThings}/>}
       />
     </Routes>
   )
