@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
-import ManliestThings from './pages/ManliestThings/ManliestThings'
+import ZeusThings from './pages/ZeusThings/ZeusThings'
 import StyledThings from './pages/StyledThings/StyledThings'
 import SillyThings from './pages/SillyThings/SIllyThings'
 import Landing from './pages/Landing/Landing'
@@ -71,8 +71,8 @@ const App = () => {
       {/* All the <Route> components should live here */}
       <Route path="/" element={<Landing />} />
       <Route
-        path="/the-manliest-things"
-        element={<ManliestThings things={bensThings} />}
+        path="/the-zeus-things"
+        element={<ZeusThings things={zeusThings} />}
       />
       <Route
         path="/the-well-styled-things"
